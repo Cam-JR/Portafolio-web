@@ -214,3 +214,10 @@ body {
   overflow-y: auto;
 }
 
+
+#proyecto1 img {
+  aspect-ratio: 15/9;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
