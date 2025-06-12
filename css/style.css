@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* IMG - FONDO */
+body {
+  background-image: linear-gradient(to top, #4553bd53 0%, #bdc2e8 1%, #e6dee948 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  overflow: hidden; /* 🚫 evita el scroll */
+}
+
+.header{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; 
+    background-color: #5E548E;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 55px;
+    transition: .3s;
+}
+ 
+.navbar a:hover{
+    color:#231942;
+}
+
+/* PERFIL  */
+
+.profile{ 
+    width: 180px;
+    height: 180px; /* PARA QUE ESTE CUADRADO */
+    border: 4px solid #5E548E; /* ANCHO Y TIPO */    
+    margin: 90px auto auto 140px;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden; /* LA IMAGEN NO SE SALDRA */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative; 
+}
+  
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ——— BANNER ——— */
+.banner{
+  background: #ffffff;
+  width: 25%;
+  margin: -37px auto 0 40px;    /* 1. baja la tarjeta */
+  padding: 50px 2.5rem;              /* 2. padding proporcional */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;       /* 3. apila elementos verticalmente */
+  align-items: center;          /* 4. centra en X */
+  text-align: center;           /* 5. centra el texto */
+  gap: 2.2rem;                  /* 6. separación uniforme */
+  box-shadow: 0 8px 24px rgba(195, 138, 138, 0.141);
+  font-family: system-ui, Arial, sans-serif;
+}
+
+/* ——— Encabezado ——— */
+.banner h1{
+  font-size: 2.3rem;
+  color: #1f056d;
+}
+
+/* ——— “Job” ——— */
+.job{
+  background: #9F86C0;
+  padding: .7rem 2rem;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 1.2rem; 
+  color: #ffffff;
+}
+
+/* ——— Iconos ——— */
+.icons{
+  display: flex;
+  gap: 2.3rem;
+}
+
+.icons a{
+  font-size: 3rem;
+  color: #1f056d;
+  transition: transform .2s, color .2s;
+}
+
+.icons a:hover{
+  color: #5E548E;
+  transform: scale(1.15);
+}
+
+/* ——— Botón de CV ——— */
+.curriculo{
+  background: #9F86C0;
+  color: #ffffff;
+  padding: .7rem 3.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: background .25s, color .25s;
+  font-size: 1rem;
+}
+
+.curriculo:hover{
+  background: #5E548E;
+  color: #fff;
+}
+
+ 
+
+.banner_about{
+  background-color: #5E548E;
+  color: white;
+  padding: 180px 2.5rem 118px; /* antes: 258px arriba */
+  border-radius: 20px;
+  width: 67%;
+  margin: -551px auto 0 468px; /* a la altura del banner y a la derecha */
+  text-align: center; 
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column; 
+  gap: 2.2rem; /* Espacio entre la parte superior */
+  position: relative;
+  z-index: 1;
+}
+
+.banner_about h1{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: -130px; /* opcional, si quieres que suba más */
+}
+
+
+
+/* ——— “Info” ——— */
+.info{
+  background: #9F86C0;
+  padding: 2rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 550;
+  font-size: 18px; 
+  color: #ffffff;
+}
