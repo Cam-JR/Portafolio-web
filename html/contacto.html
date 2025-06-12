@@ -49,26 +49,45 @@
         <a href="/docs/CV- Camila Jimenez Riveros.pdf" download class="curriculo">DOWNLOAD CV</a>
     </section>
 
-    <section class="banner_contacto">
+    <section class="banner_contacto" id="contactos">
         <h1>CONTACTO</h1>
         <div class="send">
-              
-            <form action="https://formsubmit.co/camilajimenezr21@gmail.com" method="POST" class="form_contacto">
+
+            <form action="https://formsubmit.co/camilajimenezr21@gmail.com" method="POST" class="form_contacto" id="formulario">
+
+            <!-- Desactiva CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Redirige a la misma página con #contactos -->
+            <input type="hidden" name="_next" value="http://localhost:5500/html/contacto.html">
+            <!-- Asegúrate de que el puerto sea el correcto en tu máquina -->
+
+            <div class="fila_doble">
+                <div class="campo">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
-
+                </div>
+                <div class="campo">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                </div>
+            </div>
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required>
 
-                <button type="submit">Enviar</button>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
             </form>
+
         </div>
     </section>
 
- 
+
+
+
     <script src="/js/01.js"></script>
     
     <!-- ICONOS -->

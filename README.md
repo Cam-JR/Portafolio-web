@@ -4,7 +4,7 @@ Este es mi portafolio personal desarrollado con HTML y CSS. En él muestro quié
 🔧 Tecnologías utilizadas:
 - HTML5  
 - CSS3  
-  
+
 ✨ Próximas mejoras:
  - Agregar versión responsive para móvil
  - Mejorar animaciones

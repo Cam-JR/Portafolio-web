@@ -161,59 +161,78 @@ body {
   margin-bottom: 1.5rem;
   margin-top: -130px; /* opcional, si quieres que suba más */
 }
-
-.send {
+ .send {
   background-color: #9f86c0ce;
   display: flex;
   flex-direction: column;
-  border-radius: 20px; 
+  border-radius: 20px;
   padding: 29px 15px;
   color: #ffffff;
   line-height: 1.4;
   font-weight: 720;
   width: 862px;
-  height: 420px; 
+  height: 420px;
   font-size: 17px;
-  margin: 0 auto; /* Esto centra horizontalmente */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
-
 
 .form_contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: -9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: -9px;
 }
 
-
 .form_contacto label {
-    align-self: flex-start;
-    margin-left: 20%;
-    font-weight: bold; 
+  align-self: flex-start;
+  margin-left: 20%;
+  font-weight: bold;
 }
 
 .form_contacto input,
 .form_contacto textarea {
-    width: 60%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    font-family: "DM Sans", sans-serif;
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .form_contacto button {
-    width: 30%;
-    padding: 10px;
-    background-color: #9f86c0ce;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  width: 30%;
+  padding: 10px;
+  background-color: #9f86c0ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .form_contacto button:hover {
-    background-color: #7e6aa3a4;
+  background-color: #7e6aa3a4;
+}
+
+.fila_doble {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 60%;
+}
+
+.fila_doble .campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fila_doble .campo label {
+  margin-left: 0;
+}
+
+.fila_doble .campo input {
+  width: 100%;
 }
